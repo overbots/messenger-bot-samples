@@ -1,4 +1,4 @@
-const server = require('../messenger-bot-server')
+const server = require('messenger-bot-server')
 
 server.serveStatic('public')
 

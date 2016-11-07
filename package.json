@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Sample bots for messenger-bot-server",
   "main": "index.js",
+  "repository": {
+    "url": "git@github.com:overbots/messenger-bot-samples.git",
+    "type": "git"
+  },
   "author": "Bao Dang <dangvinhbao@gmail.com>",
   "license": "MIT",
   "scripts": {
     "lint": "standard"
+  },
+  "dependencies": {
+    "messenger-bot-server": "^1.0.0"
   },
   "devDependencies": {
     "standard": "^8.5.0"
