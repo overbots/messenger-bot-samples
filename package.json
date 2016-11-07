@@ -10,10 +10,15 @@
   "author": "Bao Dang <dangvinhbao@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "dev:start": "pm2 start index.js --name bot-samples --watch",
+    "dev:stop": "pm2 stop bot-samples",
+    "dev:logs": "pm2 logs bot-samples --raw | bunyan"
   },
   "dependencies": {
-    "messenger-bot-server": "^1.0.0"
+    "bunyan": "^1.8.4",
+    "messenger-bot-server": "^1.0.1",
+    "pm2": "^2.1.4"
   },
   "devDependencies": {
     "standard": "^8.5.0"
